@@ -170,3 +170,22 @@ body {
 
 
 }
+
+/* Mobile browser "Desktop Site" mode — touch device + small height + wide viewport */
+@media (pointer: coarse) and (max-height: 800px) and (min-width: 768px) {
+  #home {
+    min-height: 70dvh !important;
+  }
+
+  section#skills > div {
+    height: 70vh !important;
+  }
+
+  section#skills > div:nth-child(2) {
+    margin-top: -30vh !important;
+  }
+
+  section#skills > div:nth-child(3) {
+    margin-top: -25vh !important;
+  }
+}
