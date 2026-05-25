@@ -34,7 +34,7 @@ const StickyCard = ({
           scale,
           top: `calc(-3vh + ${i * 20 + 80}px)`,
         }}
-        className="rounded-2xl relative -top-[6%] sm:-top-[8%] flex h-[300px] sm:h-[320px] w-[92vw] max-w-[340px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[680px] origin-top flex-col overflow-hidden bg-[#1e293b] border border-[#334155] shadow-lg"
+        className="rounded-2xl relative -top-[6%] sm:-top-[8%] flex h-[340px] sm:h-[320px] w-[92vw] max-w-[340px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[680px] origin-top flex-col overflow-hidden bg-[#1e293b] border border-[#334155] shadow-lg"
       >
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#64748b] rounded-l-2xl"></div>
         <a

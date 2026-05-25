@@ -171,7 +171,7 @@ const Skiper31 = () => {
       </div>
       <div
         ref={targetRef2}
-        className="relative -mt-[45vh] box-border flex h-[90vh] sm:h-[100vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#0f172a] p-[2vw]"
+        className="relative -mt-[25vh] sm:-mt-[45vh] box-border flex h-[90vh] sm:h-[100vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#0f172a] p-[2vw]"
       >
         <p className="flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-xl font-medium tracking-tight text-[#f8fafc] px-4 whitespace-nowrap">
           <Bracket className="h-5 sm:h-10 text-[#3b82f6]" />
@@ -192,7 +192,7 @@ const Skiper31 = () => {
       </div>
       <div
         ref={targetRef3}
-        className="relative -mt-[40vh] box-border flex h-[90vh] sm:h-[100vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#0f172a] p-[2vw]"
+        className="relative -mt-[20vh] sm:-mt-[40vh] box-border flex h-[90vh] sm:h-[100vh] flex-col items-center justify-center gap-[2vw] overflow-hidden bg-[#0f172a] p-[2vw]"
       >
         <p className="flex items-center justify-center gap-3 text-lg sm:text-xl font-medium tracking-tight text-[#f8fafc] px-4">
           <Bracket className="h-6 sm:h-10 text-[#3b82f6]" />
