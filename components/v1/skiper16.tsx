@@ -100,7 +100,7 @@ const Skiper16 = () => {
             What I&apos;ve Built
           </h2>
         </div>
-        <div className="relative flex w-full flex-col items-center justify-center pb-64 sm:pb-28">
+        <div className="relative flex w-full flex-col items-center justify-center pb-16 sm:pb-28">
           {projects.map((project, i) => {
             const targetScale = Math.max(
               0.5,
