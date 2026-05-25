@@ -155,6 +155,12 @@ export default function Home() {
                       GitHub
                     </a>
                   </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-[#475569] text-[10px] sm:text-xs w-5">&#9670;</span>
+                    <a href={data.personal.linkedin} target="_blank" rel="noopener noreferrer" className="text-[13px] sm:text-sm text-[#94a3b8] hover:text-[#f8fafc] transition-colors underline underline-offset-4 decoration-[#334155] hover:decoration-[#f8fafc]">
+                      LinkedIn
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
