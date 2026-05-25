@@ -1,0 +1,83 @@
+{
+  "personal": {
+    "name": "Rahul Raj",
+    "title": "BCA Student",
+    "email": "rahulrakshi3@gmail.com",
+    "phone": "9538762342",
+    "location": "Bommanahalli, Bangalore, Karnataka - 560068",
+    "github": "https://github.com/rahulrakshi3-netizen",
+    "linkedin": "",
+    "website": "",
+    "resume": "/rahulraj_resume.pdf"
+  },
+  "bio": "BCA student focused on Android and Full stack development, with experience building document utility apps and modern web applications. Passionate about creating clean, practical software solutions while exploring AI-powered integrations and scalable application development.",
+  "education": [
+    {
+      "institution": "St. Francis College",
+      "location": "Kormangala, Karnataka",
+      "degree": "BCA",
+      "year": "3rd Year (5th Semester)",
+      "current": true
+    }
+  ],
+  "skills": {
+    "languages": ["Java", "Python", "JavaScript"],
+    "android": ["Android Studio", "Capacitor"],
+    "web": ["HTML", "CSS", "JavaScript", "Node.js"],
+    "databases": ["MySQL"],
+    "tools": ["Git", "VS Code"]
+  },
+  "projects": [
+    {
+      "name": "Amma Pastries",
+      "type": "Full Stack Web",
+      "description": "A full-stack website for a pastry shop with a backend admin dashboard. Features live database integration for order assigning and delivery tracking.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
+      "url": "https://amma-pastries.netlify.app/"
+    },
+    {
+      "name": "Dockit App",
+      "type": "Android App",
+      "description": "An Android document utility app featuring PDF viewing, image-to-PDF conversion in a single click, image and PDF size compression tools, and PDF-to-image/text conversion capabilities.",
+      "technologies": ["Android Studio", "Capacitor", "Java", "Kotlin"],
+      "url": "https://dockit.qzz.io/"
+    },
+    {
+      "name": "Dockit Website",
+      "type": "Website",
+      "description": "A website to host the Dockit APK live with a custom domain, indexed on Google. Provides download and information about the Dockit Android application.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "url": "https://dockit.qzz.io/"
+    },
+    {
+      "name": "AZ Furniture",
+      "type": "Full Stack Web",
+      "description": "A complete full-stack website for a furniture shop with an admin dashboard, live notifications, and database integration for inventory and order management.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
+      "url": "https://az-furniture-bengaluru.netlify.app/"
+    }
+  ],
+  "certifications": [
+    "Ethical Hacking Certification",
+    "Cyber Security Certification",
+    "3rd Prize Certificate in Web Development - Department Level Programme"
+  ],
+  "softSkills": [
+    {
+      "name": "Problem Solving",
+      "desc": "Debugged complex PDF-to-image conversion logic and optimized image compression algorithms in Dockit App"
+    },
+    {
+      "name": "Goal-Oriented Thinking",
+      "desc": "Delivered full-stack platforms like Amma Pastries and AZ Furniture with live database integration and admin dashboards"
+    },
+    {
+      "name": "Communication",
+      "desc": "Translated client requirements into practical features across web and Android projects with clear documentation"
+    },
+    {
+      "name": "Self-Learning",
+      "desc": "Mastered Android development with Capacitor, Java, and Kotlin independently to ship production-grade apps"
+    }
+  ]
+}
