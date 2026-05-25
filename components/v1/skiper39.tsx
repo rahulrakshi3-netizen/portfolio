@@ -280,7 +280,7 @@ const CrowdCanvas = ({ src, rows = 15, cols = 7 }: CrowdCanvasProps) => {
     };
   }, []);
   return (
-    <canvas ref={canvasRef} className="absolute max-sm:inset-0 max-sm:h-full max-sm:w-full bottom-0 sm:h-[65vh] w-full" />
+    <canvas ref={canvasRef} className="absolute max-sm:inset-0 max-sm:h-full max-sm:w-full bottom-0 sm:h-[55vh] lg:h-[65vh] w-full" />
   );
 };
 
