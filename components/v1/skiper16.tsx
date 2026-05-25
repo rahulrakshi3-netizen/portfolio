@@ -50,7 +50,7 @@ const StickyCard = ({
             <h3 className="text-2xl sm:text-3xl font-bold text-[#f8fafc] mb-3">
               {title}
             </h3>
-            <p className="text-sm text-[#cbd5e1] leading-relaxed mb-3 line-clamp-3 sm:line-clamp-none">
+            <p className="text-sm text-[#cbd5e1] leading-relaxed mb-3 line-clamp-3">
               {description}
             </p>
             <div className="flex flex-wrap gap-1.5">
