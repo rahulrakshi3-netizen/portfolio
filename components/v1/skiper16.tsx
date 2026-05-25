@@ -65,7 +65,7 @@ const StickyCard = ({
             </div>
           </div>
           <div className="px-5 sm:px-8 py-2 sm:py-2.5 border-t border-[#334155] flex items-center justify-between">
-            <span className="text-xs text-[#64748b] truncate max-w-[75%] sm:max-w-[85%]">
+            <span className="text-xs text-[#64748b] truncate max-w-[85%]">
               {url || "URL not set"}
             </span>
             <svg className="w-3.5 h-3.5 text-[#64748b] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
