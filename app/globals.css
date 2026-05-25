@@ -50,24 +50,6 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  #home {
-    min-height: 80dvh;
-  }
-
-  #home > div:last-child > div > div:last-child {
-    gap: 0.375rem;
-  }
-
-  #home a {
-    padding: 0.375rem 0.75rem;
-    font-size: 0.75rem;
-  }
-
   #home h1 {
     font-size: 2rem !important;
   }
