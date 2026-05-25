@@ -172,7 +172,7 @@ body {
 }
 
 /* Mobile browser "Desktop Site" mode — touch device + small height + wide viewport */
-@media (pointer: coarse) and (max-height: 1000px) and (min-width: 768px) {
+@media (pointer: coarse) and (max-height: 800px) and (min-width: 768px) {
   #home {
     min-height: 70dvh !important;
   }
