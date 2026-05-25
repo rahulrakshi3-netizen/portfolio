@@ -19,11 +19,7 @@ export default function AboutPage() {
   useEffect(() => {
     const el = elRef.current;
     if (!el) return;
-    const isMobile = () => window.innerWidth < 768;
-    let tapTimer: ReturnType<typeof setTimeout>;
-
     const onMove = (e: PointerEvent) => {
-      if (isMobile()) return;
       const section = document.getElementById("about");
       if (!section) return;
       const rect = section.getBoundingClientRect();
@@ -35,35 +31,6 @@ export default function AboutPage() {
       stateRef.current.tx = e.clientX;
       stateRef.current.ty = e.clientY;
       stateRef.current.visible = inside;
-    };
-
-    const onTap = (e: MouseEvent) => {
-      if (!isMobile()) return;
-      if ((e.target as HTMLElement)?.closest("[data-resume-btn]")) return;
-      const section = document.getElementById("about");
-      if (!section) return;
-      const rect = section.getBoundingClientRect();
-      const inside =
-        e.clientX >= rect.left &&
-        e.clientX <= rect.right &&
-        e.clientY >= rect.top &&
-        e.clientY <= rect.bottom;
-      if (inside) {
-        clearTimeout(tapTimer);
-        stateRef.current.tx = e.clientX;
-        stateRef.current.ty = e.clientY;
-        stateRef.current.x = e.clientX;
-        stateRef.current.y = e.clientY;
-        stateRef.current.visible = true;
-        el.style.left = `${e.clientX}px`;
-        el.style.top = `${e.clientY - 36}px`;
-        el.style.opacity = "1";
-        tapTimer = setTimeout(() => {
-          stateRef.current.visible = false;
-        }, 5000);
-      } else {
-        stateRef.current.visible = false;
-      }
     };
 
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -81,12 +48,9 @@ export default function AboutPage() {
     };
 
     document.addEventListener("pointermove", onMove);
-    document.addEventListener("click", onTap);
     let raf = requestAnimationFrame(tick);
     return () => {
       document.removeEventListener("pointermove", onMove);
-      document.removeEventListener("click", onTap);
-      clearTimeout(tapTimer);
       cancelAnimationFrame(raf);
     };
   }, []);
@@ -96,7 +60,7 @@ export default function AboutPage() {
       <div
         ref={elRef}
         data-resume-btn
-        className="fixed z-50 select-none rounded-full border border-[#1e293b] bg-white/90 backdrop-blur-sm px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
+        className="max-sm:hidden fixed z-50 select-none rounded-full border border-[#1e293b] bg-white/90 backdrop-blur-sm px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
         style={{ left: "0px", top: "0px", opacity: 0 }}
         onClick={() => window.open(personal.resume || "#", "_blank", "noopener,noreferrer")}
       >
@@ -112,6 +76,14 @@ export default function AboutPage() {
             {personal.name}
           </h2>
           <div className="w-12 h-0.5 bg-[#1e293b] mx-auto mt-4" />
+          <a
+            href={personal.resume || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sm:hidden inline-block mt-6 rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight no-underline shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200"
+          >
+            View / Download Resume
+          </a>
         </div>
 
         <div className="max-w-2xl mx-auto mb-12 sm:mb-20">
