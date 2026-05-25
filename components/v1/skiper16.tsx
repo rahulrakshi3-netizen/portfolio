@@ -34,7 +34,7 @@ const StickyCard = ({
           scale,
           top: `calc(-3vh + ${i * 20 + 80}px)`,
         }}
-        className="rounded-2xl relative -top-[6%] sm:-top-[8%] flex h-[340px] sm:h-[320px] w-[92vw] max-w-[340px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[680px] origin-top flex-col overflow-hidden bg-[#1e293b] border border-[#334155] shadow-lg"
+        className="rounded-2xl relative -top-[6%] sm:-top-[8%] flex h-[400px] sm:h-[320px] w-[92vw] max-w-[340px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[680px] origin-top flex-col overflow-hidden bg-[#1e293b] border border-[#334155] shadow-lg"
       >
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#64748b] rounded-l-2xl"></div>
         <a
@@ -50,7 +50,7 @@ const StickyCard = ({
             <h3 className="text-2xl sm:text-3xl font-bold text-[#f8fafc] mb-3">
               {title}
             </h3>
-            <p className="text-sm text-[#cbd5e1] leading-relaxed mb-3 line-clamp-3">
+            <p className="text-sm text-[#cbd5e1] leading-relaxed mb-3 line-clamp-3 sm:line-clamp-none">
               {description}
             </p>
             <div className="flex flex-wrap gap-1.5">
@@ -65,7 +65,7 @@ const StickyCard = ({
             </div>
           </div>
           <div className="px-5 sm:px-8 py-2 sm:py-2.5 border-t border-[#334155] flex items-center justify-between">
-            <span className="text-xs text-[#64748b] truncate max-w-[80%]">
+            <span className="text-xs text-[#64748b] truncate max-w-[75%] sm:max-w-[85%]">
               {url || "URL not set"}
             </span>
             <svg className="w-3.5 h-3.5 text-[#64748b] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ const Skiper16 = () => {
             What I&apos;ve Built
           </h2>
         </div>
-        <div className="relative flex w-full flex-col items-center justify-center pb-16 sm:pb-28">
+        <div className="relative flex w-full flex-col items-center justify-center pb-32 sm:pb-28">
           {projects.map((project, i) => {
             const targetScale = Math.max(
               0.5,
