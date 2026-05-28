@@ -69,21 +69,24 @@ export default function AboutPage() {
       <div
         ref={elRef}
         data-resume-btn
-        className="max-sm:hidden fixed z-50 select-none flex gap-1 rounded-full border border-[#1e293b] bg-white/90 backdrop-blur-sm px-1 py-1 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm"
+        className="max-sm:hidden fixed z-50 select-none flex flex-col items-center gap-1 rounded-xl border border-[#1e293b] bg-white/90 backdrop-blur-sm px-2 py-2 text-[#1e293b] shadow-sm"
         style={{ left: "0px", top: "0px", opacity: 0 }}
       >
-        <button
-          onClick={() => window.open(personal.resume || "#", "_blank", "noopener,noreferrer")}
-          className="rounded-full px-3 py-1.5 hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
-        >
-          View Resume
-        </button>
-        <button
-          onClick={downloadResume}
-          className="rounded-full px-3 py-1.5 hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
-        >
-          Download Resume
-        </button>
+        <span className="text-[10px] uppercase tracking-[0.3em] font-semibold px-2">Resume</span>
+        <div className="flex gap-1">
+          <button
+            onClick={() => window.open(personal.resume || "#", "_blank", "noopener,noreferrer")}
+            className="rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.25em] font-medium hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
+          >
+            View
+          </button>
+          <button
+            onClick={downloadResume}
+            className="rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.25em] font-medium hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
+          >
+            Download
+          </button>
+        </div>
       </div>
 
       <div className="px-4 sm:px-6 pt-16 sm:pt-48 pb-16 sm:pb-40 max-w-4xl mx-auto w-full">
@@ -95,21 +98,24 @@ export default function AboutPage() {
             {personal.name}
           </h2>
           <div className="w-12 h-0.5 bg-[#1e293b] mx-auto mt-4" />
-          <div className="sm:hidden flex justify-center gap-2 mt-6">
-            <a
-              href={personal.resume || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight no-underline shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200"
-            >
-              View Resume
-            </a>
-            <button
-              onClick={downloadResume}
-              className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
-            >
-              Download Resume
-            </button>
+          <div className="sm:hidden flex flex-col items-center gap-2 mt-6">
+            <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-[#1e293b]">Resume</span>
+            <div className="flex gap-2">
+              <a
+                href={personal.resume || "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight no-underline shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200"
+              >
+                View
+              </a>
+              <button
+                onClick={downloadResume}
+                className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
+              >
+                Download
+              </button>
+            </div>
           </div>
         </div>
 
