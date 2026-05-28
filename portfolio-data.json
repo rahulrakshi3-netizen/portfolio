@@ -36,18 +36,18 @@
       "url": "https://amma-pastries.netlify.app/"
     },
     {
-      "name": "Dockit App",
+      "name": "Doczis App",
       "type": "Android App",
-      "description": "An Android document utility app featuring PDF viewing, image-to-PDF conversion in a single click, image and PDF size compression tools, and PDF-to-image/text conversion capabilities.",
-      "technologies": ["Android Studio", "Capacitor", "Java", "Kotlin"],
-      "url": "https://dockit.qzz.io/"
+      "description": "A fully offline, privacy-first Android document utility app built with Kotlin and MVVM architecture. Features 12+ professional PDF tools including Image-to-PDF conversion, OCR text extraction via Google ML Kit, PDF page reordering/deletion/splitting/merging, file compression, AES-256 encryption, watermarking, and signature overlay. Built-in PDF viewer with pinch-to-zoom and document text extractor for Word/PowerPoint files. Room database for recent file tracking with search and bulk management. No ads, no accounts, no data leaves the device.",
+      "technologies": ["Kotlin", "Android Studio", "MVVM", "Room DB", "PDFBox", "ML Kit"],
+      "url": "https://doczis-site.vercel.app/"
     },
     {
-      "name": "Dockit Website",
+      "name": "Doczis Site",
       "type": "Website",
-      "description": "A website to host the Dockit APK live with a custom domain, indexed on Google. Provides download and information about the Dockit Android application.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "url": "https://dockit.qzz.io/"
+      "description": "A modern marketing landing page for the Doczis Android app built with Next.js 16, TypeScript, and Framer Motion. Features animated UI with dark/light theme toggle, interactive app screenshots carousel, comprehensive feature showcase across 12+ tools, APK download with API route, privacy policy, and FAQ accordion. Fully responsive with SEO metadata, Open Graph tags, and PWA manifest. Clean, fast, and focused on conversion.",
+      "technologies": ["Next.js", "TypeScript", "Framer Motion", "Lucide"],
+      "url": "https://doczis-site.vercel.app/"
     },
     {
       "name": "AZ Furniture",
@@ -65,7 +65,7 @@
   "softSkills": [
     {
       "name": "Problem Solving",
-      "desc": "Debugged complex PDF-to-image conversion logic and optimized image compression algorithms in Dockit App"
+      "desc": "Debugged complex PDF-to-image conversion logic and optimized image compression algorithms in Doczis App"
     },
     {
       "name": "Goal-Oriented Thinking",
