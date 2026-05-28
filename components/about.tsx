@@ -76,13 +76,13 @@ export default function AboutPage() {
           onClick={() => window.open(personal.resume || "#", "_blank", "noopener,noreferrer")}
           className="rounded-full px-3 py-1.5 hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
         >
-          View
+          View Resume
         </button>
         <button
           onClick={downloadResume}
           className="rounded-full px-3 py-1.5 hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
         >
-          Download
+          Download Resume
         </button>
       </div>
 
@@ -102,13 +102,13 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight no-underline shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200"
             >
-              View
+              View Resume
             </a>
             <button
               onClick={downloadResume}
               className="inline-block rounded-full border border-[#1e293b] bg-white px-4 py-1.5 text-[#1e293b] text-[11px] uppercase tracking-[0.25em] font-medium whitespace-nowrap leading-tight shadow-sm hover:bg-[#1e293b] hover:text-white transition-colors duration-200 cursor-pointer"
             >
-              Download
+              Download Resume
             </button>
           </div>
         </div>
